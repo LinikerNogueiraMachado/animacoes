@@ -7,8 +7,12 @@
 
     --background-clr: #000;
 
+    --clr-primary-light: #2c2c2c;
+
     --font-size-primary: 4rem;
     --font-size-secundary: 2rem;
+
+    --shadow: 0 0 1rem #fff;
 }
 
 * {
@@ -18,12 +22,28 @@
     font-family: 'Poppins', sans-serif;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background: var(--clr-primary-light);
+    box-shadow: var(--shadow);
+}
+
 body {
     background: var(--background-clr);
+    color: var(--clr-text-light);
+    display: flex;align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 .container {
     display: inline-flex;
+    top: 10vh;
+    position: relative;
 }
 
 .container .estatico {
@@ -34,21 +54,46 @@ body {
 
 .container .dinamico {
     margin-left: .3rem;
+    line-height: 90px;
+    height: 90px;
+    overflow: hidden;
 }
 
-.dinamico li{
+.dinamico li {
     color: orangered;
     list-style: none;
     font-size: var(--font-size-primary);
     font-weight: 500;
+    left: 0;
+    top: 0;
+    position: relative;
+    animation: slide 6s steps(4) infinite;
 }
 
-.dinamico li span::after{
+@keyframes slide{
+    100%{
+        top: -360px;
+    }
+}
+
+.dinamico li span {
+    position: relative;
+}
+
+.dinamico li span::after {
     content: '';
     position: absolute;
     width: 100%;
     height: 100%;
     left: 0;
-    border-left: 2px solid #948686;
-    animation: typing 1.5s steps(10) infinite;
+    border-left: 6px solid #948686;
+    background: var(--background-clr);
+    animation: typing 1.5s steps(20) infinite;
+}
+
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
 }
