@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Ibarra+Real+Nova&family=Macondo&family=Playfair+Display&family=Poiret+One&family=Poppins:ital,wght@0,400;0,500;1,400&family=Rubik+Burned&family=Shadows+Into+Light&display=swap');
+
+/* === === estilos globais === ===*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
