@@ -3,24 +3,95 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         <link rel="stylesheet" href="index.css">
         <title>Animações em html e css</title>
     </head>
     <body>
         <header>
-            <h1>Olá seja bem vindo!</h1>
+            <nav class="navbar">
+                <a class="active" href="#">Home</a>
+                <a href="#sobre"> Sobre</a>
+                <a href="#contato"> Contato</a>
+            </nav>
         </header>
-        <div class="container">
-            <div class="estatico">Sou</div>
+        <section class="container">
             <ul class="dinamico">
                 <li>
-                    <span>Desenvolvedor</span>
+                    <span>Desenvolvimento</span>
                 </li>
                 <li>
                     <span>Frontend</span>
                 </li>
+                <li>
+                    <span>Web site</span>
+                </li>
             </ul>
-        </div>
-    </body>
-</html>
+        </section>
+        <!-- section sobre-->
+        <section id="sobre">
+            <h1>Sobre</h1>
+            <div class="content">
+                <h3>Olá! Seja bem vindo ao meu website de página única</h3>
+                <p>
+                    &nbsp;Um breve resumo sobre minha vida
+                    tragetória que passei para chegar até aqui.
+                </p>
+                <div class="container">
+                    <div>
+                        <h3>Trabalhos anteriores</h3>
+                        <div>
+                            <span>
+                                &nbsp;Já trabalhei em muitos seguimentos, desde o agro até a construção
+                                civil.
+                                <br>
+                                &nbsp;Abandonei o ensino médio por conta do emprego para ter uma renda
+                                extra
+                            </span>
+                        </div>
+                        <div>
+                            <h3>Estudos anteriores à faculdade</h3>
+                            <div>
+                                <span>
+                                    &nbsp;Abandonei o ensino médio por conta do emprego para ter uma 
+                                    renda extra, por longos 7 anos fiquei afastado da escola, 
+                                    trabalhando de Pedreiro, foi o tempo nescessário e sofrido para 
+                                    repensar em que e o que eu queria para meu futuro? e, aos 
+                                    24 anos de idade decidi voltar aos estudos e ingressar em uma 
+                                    faculdade.
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3>A escolha</h3>
+                            <div>
+                                <span>
+                                    &nbsp;Por anos pensei e repensei varias vezes, quem eu era? o que
+                                    eu queria? não tinha foco, não tinha objetivos nem ao menos vontade
+                                    em almejar um emprego melhor ou um bom salário, fui uma pessoa sem 
+                                    ambições.
+                                    <br>
+                                    &nbsp;Optei pela técnologia por ter contato desde criança, sempre 
+                                    gostei de jogos eletrônicos, computadores e afins, sou apaixonado 
+                                    pela técnologia e como ela é desenvolvida, com a mesma curiosidade 
+                                    de infância de querer aprender coisas novas.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section id="contato">
+                <div class="content">
+                    <h1>Contato</h1>
+                    <div class="container">
+                        <a href="#">
+                            <span class="logo-whatsapp">WhatssApp</span>
+                            <ion-icon class="logo-whatsapp" name="logo-whatsapp"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </body>
+    </html>

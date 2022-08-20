@@ -7,7 +7,7 @@
 
     --background-clr: #000;
 
-    --clr-primary-light: #2c2c2c;
+    --clr-primary-light: #ff4500;
 
     --font-size-primary: 4rem;
     --font-size-secundary: 2rem;
@@ -25,42 +25,64 @@
 header {
     position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
+    background: var(--background-clr);
+    padding: 1rem 7%;
     display: flex;
-    width: 100%;
+    align-items: center;
     justify-content: space-between;
-    background: var(--clr-primary-light);
+    z-index: 1000;
     box-shadow: var(--shadow);
+}
+
+header .navbar a {
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: var(--light-clr);
+    list-style: none;
+}
+
+header .navbar a.active,
+header .navbar a:hover {
+    color: var(--clr-primary-light);
+    background: var(--primary-clr);
+}
+
+header #menu-bars {
+    display: none;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 body {
     background: var(--background-clr);
     color: var(--clr-text-light);
-    display: flex;align-items: center;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    min-height: 100vh;
 }
 
 .container {
-    display: inline-flex;
+    display: flex;
     top: 10vh;
     position: relative;
-}
-
-.container .estatico {
-    color: var(--clr-text-light);
-    font-size: var(--font-size-primary);
-    font-weight: 400;
 }
 
 .container .dinamico {
     margin-left: .3rem;
     line-height: 90px;
     height: 90px;
+    width: 100%;
     overflow: hidden;
 }
 
 .dinamico li {
-    color: orangered;
+    color: var(--clr-primary-light);
     list-style: none;
     font-size: var(--font-size-primary);
     font-weight: 500;
@@ -96,4 +118,24 @@ body {
         left: 100%;
         margin: 0 -35px 0 35px;
     }
+}
+
+section {
+    position: relative;
+    top: 7rem;
+}
+
+section h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: var(--clr-primary-light);
+}
+
+section h3 {
+    color: var(--clr-primary-light);
+}
+
+.logo-whatsapp {
+    color: rgb(52, 175, 35);
+    font-size: 25px;
 }
