@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Ibarra+Real+Nova&family=Macondo&family=Playfair+Display&family=Poiret+One&family=Poppins:ital,wght@0,400;0,500;1,400&family=Rubik+Burned&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Alumni+Sans+Collegiate+One&display=swap');
 
 /* === === estilos globais === ===*/
 
 :root {
     --clr-text-light: #948686;
 
-    --background-clr: #000;
+    --background-clr: rgb(32, 32, 32);
 
     --clr-primary-light: #ff4500;
 
-    --font-size-primary: 4rem;
+    --font-size-primary: 6rem;
     --font-size-secundary: 2rem;
+
+    --btn-clr: #242424;
 
     --shadow: 0 0 1rem #fff;
 }
@@ -59,22 +63,38 @@ a {
     text-decoration: none;
 }
 
+html,
 body {
+    flex-wrap: wrap;
     background: var(--background-clr);
     color: var(--clr-text-light);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+h4 {
+    font-family: 'Aboreto', cursive;
+    text-decoration: line-through 1px;
 }
 
 .container {
     display: flex;
-    top: 10vh;
+    top: 50vh;
+    height: 200px;
     position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content {
+    display: block;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 
 .container .dinamico {
-    margin-left: .3rem;
+    margin-left: 0;
     line-height: 90px;
     height: 90px;
     width: 100%;
@@ -85,7 +105,6 @@ body {
     color: var(--clr-primary-light);
     list-style: none;
     font-size: var(--font-size-primary);
-    font-weight: 500;
     left: 0;
     top: 0;
     position: relative;
@@ -98,17 +117,16 @@ body {
     }
 }
 
-.dinamico li span {
+.dinamico li h4 {
     position: relative;
 }
 
-.dinamico li span::after {
+.dinamico li h4::after {
     content: '';
     position: absolute;
     width: 100%;
     height: 100%;
     left: 0;
-    border-left: 6px solid #948686;
     background: var(--background-clr);
     animation: typing 1.5s steps(20) infinite;
 }
@@ -116,13 +134,16 @@ body {
 @keyframes typing {
     100% {
         left: 100%;
-        margin: 0 -35px 0 35px;
+        margin:  -10px  90px;
     }
 }
 
 section {
-    position: relative;
     top: 7rem;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
 }
 
 section h1 {
@@ -135,7 +156,88 @@ section h3 {
     color: var(--clr-primary-light);
 }
 
+.btn-contact {
+    display: flex;
+}
+
 .logo-whatsapp {
+    display: flex;
+    position: relative;
+    background: var(--btn-clr);
+    border-radius: 10px;
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 150px;
+}
+
+.logo-whatsapp span{
     color: rgb(52, 175, 35);
+}
+
+.logo-whatsapp, i{
+    color:rgb(52, 175, 35);
     font-size: 25px;
+}
+
+.logo-linkedin {
+    display: flex;
+    position: relative;
+    background: var(--btn-clr);
+    border-radius: 10px;
+    margin: 3px 3px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 150px;
+}
+
+.logo-linkedin span{
+    color: #0e76a8;
+}
+
+.logo-linkedin, i {
+    color: #0e76a8;
+    font-size: 25px;
+}
+
+.img-card {
+    justify-content: center;
+    align-items: center;
+}
+
+.img-card img {
+    position: relative;
+    width: 95%;
+    height: 80%;
+    margin: 30px;
+    border-radius: 20px;
+}
+
+.sobre {
+    position: relative;
+    justify-content: left;
+    margin:  5rem ;
+    margin-top: 30rem;
+    margin-bottom: 10vh;
+    width: fit-content;
+}
+
+.projetos {
+    position: relative;
+    justify-content: left;
+    margin:  5rem ;
+    margin-top: 20rem;
+    width: fit-content;
+}
+
+.contato {
+    display: flex;
+    position: relative;
+    margin-top: 12rem;
+    margin-bottom: 20rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }

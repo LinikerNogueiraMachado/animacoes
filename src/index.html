@@ -13,40 +13,60 @@
             <nav class="navbar">
                 <a class="active" href="#">Home</a>
                 <a href="#sobre"> Sobre</a>
+                <a href="#projetos">Projetos</a>
                 <a href="#contato"> Contato</a>
             </nav>
         </header>
+        <!--container dinamico-->
         <section class="container">
             <ul class="dinamico">
                 <li>
-                    <span>Desenvolvimento</span>
+                    <h4 style="
+                    ">
+                        Desenvolvimento
+                    </h4>
                 </li>
                 <li>
-                    <span>Frontend</span>
+                    <h4 style="
+                    color: #adff2f;
+                    ">
+                        Frontend
+                    </h4>
                 </li>
                 <li>
-                    <span>Web site</span>
+                    <h4 style="
+                    color: #a200ff;
+                    ">
+                        WebSite
+                    </h4>
+                </li>
+                <li>
+                    <h4 style="
+                    color: #008cff;
+                    ">
+                        React
+                    </h4>
                 </li>
             </ul>
         </section>
         <!-- section sobre-->
-        <section id="sobre">
-            <h1>Sobre</h1>
-            <div class="content">
+        <section class="sobre" id="sobre">
+            <div>
+                <h1>Sobre</h1>
                 <h3>Olá! Seja bem vindo ao meu website de página única</h3>
                 <p>
-                    &nbsp;Um breve resumo sobre minha vida
+                    &nbsp;&nbsp;&nbsp;&nbsp;Um breve resumo sobre minha vida
                     tragetória que passei para chegar até aqui.
                 </p>
-                <div class="container">
+                <div>
                     <div>
                         <h3>Trabalhos anteriores</h3>
                         <div>
                             <span>
-                                &nbsp;Já trabalhei em muitos seguimentos, desde o agro até a construção
+                                &nbsp;&nbsp;&nbsp;&nbsp;Já trabalhei em muitos seguimentos, desde o agro até a construção
                                 civil.
                                 <br>
-                                &nbsp;Abandonei o ensino médio por conta do emprego para ter uma renda
+                                &nbsp;&nbsp;&nbsp;&nbsp;Abandonei o ensino médio por conta do emprego para ter uma renda
                                 extra
                             </span>
                         </div>
@@ -54,7 +74,7 @@
                             <h3>Estudos anteriores à faculdade</h3>
                             <div>
                                 <span>
-                                    &nbsp;Abandonei o ensino médio por conta do emprego para ter uma 
+                                    &nbsp;&nbsp;&nbsp;&nbsp;Abandonei o ensino médio por conta do emprego para ter uma 
                                     renda extra, por longos 7 anos fiquei afastado da escola, 
                                     trabalhando de Pedreiro, foi o tempo nescessário e sofrido para 
                                     repensar em que e o que eu queria para meu futuro? e, aos 
@@ -67,12 +87,12 @@
                             <h3>A escolha</h3>
                             <div>
                                 <span>
-                                    &nbsp;Por anos pensei e repensei varias vezes, quem eu era? o que
+                                    &nbsp;&nbsp;&nbsp;&nbsp;Por anos pensei e repensei varias vezes, quem eu era? o que
                                     eu queria? não tinha foco, não tinha objetivos nem ao menos vontade
                                     em almejar um emprego melhor ou um bom salário, fui uma pessoa sem 
                                     ambições.
                                     <br>
-                                    &nbsp;Optei pela técnologia por ter contato desde criança, sempre 
+                                    &nbsp;&nbsp;&nbsp;&nbsp;Optei pela técnologia por ter contato desde criança, sempre 
                                     gostei de jogos eletrônicos, computadores e afins, sou apaixonado 
                                     pela técnologia e como ela é desenvolvida, com a mesma curiosidade 
                                     de infância de querer aprender coisas novas.
@@ -82,16 +102,41 @@
                     </div>
                 </div>
             </div>
-            <section id="contato">
-                <div class="content">
-                    <h1>Contato</h1>
-                    <div class="container">
-                        <a href="#">
+        </section>
+        <!--section projetos-->
+        <section class="projetos" id="projetos">
+            <div class="content">
+                <h1>Projeto anterior</h1>
+                
+                <div class="btn-contact">
+                    <div class="img-card">
+                        <a href="https://retaurante_liniker.surge.sh/">
+                            <span>Clique para ver o projeto</span>
+                            <img src="assets/img/homepage-restaurante.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--section contato-->
+        <section class="contato" id="contato">
+            <div>
+                <h1>Contato</h1>
+                <div class="btn-contact">
+                    <div class="logo-whatsapp">
+                        <a href="https://bit.ly/portifolio_liniker_nogueira">
                             <span class="logo-whatsapp">WhatssApp</span>
                             <ion-icon class="logo-whatsapp" name="logo-whatsapp"></ion-icon>
                         </a>
                     </div>
+                    <div class="logo-linkedin">
+                        <a href="https://www.linkedin.com/in/liniker-nogueira-machado">
+                            <span class="logo-linkedin">LinkedIn</span>
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </div>
                 </div>
-            </section>
-        </body>
-    </html>
+            </div>
+        </section>
+    </body>
+</html>
